@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Movie from "../components/Movie";
+import Loading from "../components/Loading";
 
 class Home extends React.Component {
   state = {
@@ -29,7 +30,7 @@ class Home extends React.Component {
     return (
       <div className="wrapper">
         {isLoading ? (
-          <span>Loading...</span>
+          <Loading />
         ) : (
           <section className="movies">
             {movies.map((movie) => (
@@ -43,6 +44,7 @@ class Home extends React.Component {
                 synopsis={movie.synopsis}
                 language={movie.language}
                 image={movie.medium_cover_image}
+                runtime={movie.runtime}
               />
             ))}
           </section>
