@@ -3,6 +3,7 @@
 @import "../scss/variables";
 
 .movie {
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   &__image {
