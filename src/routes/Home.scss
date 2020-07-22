@@ -1,0 +1,17 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+@import "../scss/reset";
+
+.wrapper {
+  background-color: $grey;
+  color: $lightGrey;
+  @include font("font-sans");
+  display: flex;
+  justify-content: center;
+  .movies {
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(245px, 1fr));
+    grid-auto-rows: 500px;
+  }
+}

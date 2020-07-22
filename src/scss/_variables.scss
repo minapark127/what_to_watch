@@ -12,3 +12,8 @@ $purple: #b294bb;
 $font-mono: "Source Code Pro", monospace;
 $font-sans: "Open Sans", sans-serif;
 $font-logo: "Source Code Pro", monospace;
+
+$minTablet: 768px;
+$maxMobile: $minTablet - 1;
+$minDesktop: 1024px;
+$maxTablet: $minDesktop -1;

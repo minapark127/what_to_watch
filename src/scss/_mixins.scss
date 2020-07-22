@@ -9,3 +9,19 @@
     font-family: $font-logo;
   }
 }
+
+@mixin responsive($device) {
+  @if $device == "mobile" {
+    @media screen and (max-width: $maxMobile) {
+      @content;
+    }
+  } @else if $device == "tablet" {
+    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) {
+      @content;
+    }
+  } @else if $device == "desktop" {
+    @media screen and (min-width: $minDesktop) {
+      @content;
+    }
+  }
+}
