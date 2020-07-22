@@ -1,0 +1,11 @@
+@import "./variables";
+
+@mixin font($font) {
+  @if $font == "font-mono" {
+    font-family: $font-mono;
+  } @else if $font == "font-sans" {
+    font-family: $font-sans;
+  } @else if $font == "font-logo" {
+    font-family: $font-logo;
+  }
+}

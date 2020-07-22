@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import Movie from "../components/Movie";
 import Loading from "../components/Loading";
+import "./Home.scss";
 
 class Home extends React.Component {
   state = {
