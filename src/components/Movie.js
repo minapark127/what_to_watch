@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import "./Movie.scss";
 
 function Movie({
   id,
@@ -16,6 +17,7 @@ function Movie({
   return (
     <div className="movie">
       <Link
+        className="movie__image"
         to={{
           pathname: `/movie/${id}`,
           state: {
@@ -31,7 +33,7 @@ function Movie({
         }}
       >
         <img
-          className="movie__image"
+          className="movie__image-img"
           src={image}
           alt={title}
           title={title}
@@ -53,19 +55,19 @@ function Movie({
             },
           }}
         >
-          <li className="movie__title">{title}</li>
+          <li className="movie__info__title">{title}</li>
         </Link>
-        <li className="movie__genres">
+        <li className="movie__info__genres">
           {genres.slice(0, 3).map((genre, index) => {
             if (index === 0) {
               return (
-                <span key={index} className="movie__genres-genre">
+                <span key={index} className="movie__info__genres-genre">
                   {genre}
                 </span>
               );
             } else if (index > 0) {
               return (
-                <span key={index} className="movie__genres-genre">
+                <span key={index} className="movie__info__genres-genre">
                   {/* ,&nbsp;{genre} */}
                   &nbsp;|&nbsp;{genre}
                 </span>
@@ -73,7 +75,7 @@ function Movie({
             }
           })}
         </li>
-        <li className="movie__rating">{rating}/10</li>
+        <li className="movie__info__rating">{rating}/10</li>
       </ul>
     </div>
   );
