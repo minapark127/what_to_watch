@@ -2,17 +2,20 @@
 
 .wrapper {
   width: 100vw;
+  padding-top: 30px;
   background-color: $grey;
   color: $lightGrey;
   @include font("font-sans");
   display: flex;
   justify-content: center;
   .movies {
-    width: 97vw;
+    width: 100%;
+    padding: 0 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 230px);
-    grid-auto-rows: 600px;
+    grid-auto-rows: 550px;
     column-gap: 20px;
+    row-gap: 20px;
     justify-content: center;
   }
 }

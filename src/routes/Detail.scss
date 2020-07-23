@@ -6,16 +6,25 @@
   color: $lightGrey;
   @include font(font-sans);
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
+  grid-template-columns: minmax(230px, 1.5fr) 2fr;
   justify-items: center;
+  align-items: center;
+  @include responsive(mobile) {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
   padding: 30px 0;
   &__image {
-    width: 80%;
+    width: 70%;
+    @include responsive(mobile) {
+      width: 40%;
+    }
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5),
       0 10px 10px -5px rgba(0, 0, 0, 0.7);
   }
   &__info {
     height: 100%;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,11 +39,20 @@
     }
     &__misc {
       display: flex;
-      margin-bottom: 60px;
+      flex-direction: column;
+      margin-bottom: 30px;
+      @include responsive(desktop) {
+        margin-bottom: 60px;
+        flex-direction: row;
+        li {
+          margin-right: 30px;
+        }
+      }
       li {
-        margin-right: 30px;
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 40px 1fr;
         svg {
-          margin-right: 10px;
           color: $yellow;
         }
       }
@@ -45,7 +63,7 @@
         margin-bottom: 15px;
       }
       p {
-        width: 95%;
+        width: 90%;
         font-size: 1.2rem;
         letter-spacing: 1px;
         line-height: 1.5rem;
