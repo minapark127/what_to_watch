@@ -5,6 +5,7 @@ import { HashRouter, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 import Navigation from "./components/Navigation";
+import "./App.scss";
 
 library.add(fas);
 

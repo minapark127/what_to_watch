@@ -1,0 +1,7 @@
+@import "./scss/reset";
+@import "./scss/mixins";
+@import "./scss/variables";
+
+body {
+  background-color: $grey;
+}
