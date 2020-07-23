@@ -13,20 +13,20 @@
   justify-content: space-between;
   align-items: flex-end;
   padding: 20px;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   position: sticky;
   top: 0;
   a {
     color: inherit;
     text-decoration: none;
-    @include font("font-logo");
+    @include font("font-sans");
     &:hover {
-      color: $red;
+      color: $yellow;
     }
     .header__logo {
-      color: $red;
-      text-transform: uppercase;
+      color: $yellow;
       font-size: 2.5rem;
+      @include font("font-logo");
     }
   }
 }
