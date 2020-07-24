@@ -1,0 +1,58 @@
+@import "../App.scss";
+
+.about {
+  height: 80vh;
+  @include font(font-mono);
+  font-size: 1.7rem;
+  @include responsive(mobile) {
+    font-size: 1.3rem;
+    a {
+      font-size: 1rem;
+    }
+  }
+  color: $lightGrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    width: 60%;
+    border: 1px solid darken($lightGrey, 50%);
+    padding: 50px;
+    @include responsive(mobile) {
+      width: 100%;
+      padding: 50px 10px;
+      border: none;
+    }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    & > * {
+      line-height: 2.5rem;
+    }
+    svg {
+      color: $purple;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        color: $yellow;
+        text-decoration: underline;
+      }
+    }
+    &-icon {
+      margin: 60px 0 10px 0;
+      font-size: 2.8rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  span {
+    &:last-of-type {
+      margin-top: 70px;
+      font-size: 3.2rem;
+    }
+  }
+}
