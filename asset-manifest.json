@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/what_to_watch/static/css/main.654cace4.chunk.css",
+    "main.css": "/what_to_watch/static/css/main.5cf01bce.chunk.css",
     "main.js": "/what_to_watch/static/js/main.4d402ebe.chunk.js",
     "main.js.map": "/what_to_watch/static/js/main.4d402ebe.chunk.js.map",
     "runtime-main.js": "/what_to_watch/static/js/runtime-main.d87320a0.js",
@@ -8,15 +8,15 @@
     "static/js/2.098cd7ec.chunk.js": "/what_to_watch/static/js/2.098cd7ec.chunk.js",
     "static/js/2.098cd7ec.chunk.js.map": "/what_to_watch/static/js/2.098cd7ec.chunk.js.map",
     "index.html": "/what_to_watch/index.html",
-    "precache-manifest.6a17b1230392b550feff08106422fc0e.js": "/what_to_watch/precache-manifest.6a17b1230392b550feff08106422fc0e.js",
+    "precache-manifest.b9c4dec974d072fd385527853d6c5aff.js": "/what_to_watch/precache-manifest.b9c4dec974d072fd385527853d6c5aff.js",
     "service-worker.js": "/what_to_watch/service-worker.js",
-    "static/css/main.654cace4.chunk.css.map": "/what_to_watch/static/css/main.654cace4.chunk.css.map",
+    "static/css/main.5cf01bce.chunk.css.map": "/what_to_watch/static/css/main.5cf01bce.chunk.css.map",
     "static/js/2.098cd7ec.chunk.js.LICENSE.txt": "/what_to_watch/static/js/2.098cd7ec.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d87320a0.js",
     "static/js/2.098cd7ec.chunk.js",
-    "static/css/main.654cace4.chunk.css",
+    "static/css/main.5cf01bce.chunk.css",
     "static/js/main.4d402ebe.chunk.js"
   ]
 }
